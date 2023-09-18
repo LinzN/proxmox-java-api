@@ -23,8 +23,13 @@ public class Result {
     private final MethodType _methodType;
     private final ResponseType _responseType;
 
-    public Result(JSONObject response, int statusCode, String reasonPhrase, String requestResource,
-                  Map<String, Object> requestParameters, MethodType methodType, ResponseType responseType) {
+    public Result(JSONObject response,
+            int statusCode,
+            String reasonPhrase,
+            String requestResource,
+            Map<String, Object> requestParameters,
+            MethodType methodType,
+            ResponseType responseType) {
         _response = response;
         _statusCode = statusCode;
         _reasonPhrase = reasonPhrase;
